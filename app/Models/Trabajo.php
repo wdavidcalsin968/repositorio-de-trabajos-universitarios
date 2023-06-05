@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Trabajo extends Model
 {
     use HasFactory;
+
+
+    public function curso()
+    {
+        return $this->belongsTo(Curso::class);
+    }
+
+    public function matriculas()
+    {
+        return $this->belongsToMany(Matricula::class);
+    }
 }

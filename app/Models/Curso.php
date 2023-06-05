@@ -19,4 +19,14 @@ class Curso extends Model
     {
         return $this->belongsTo(Carrera::class);
     }
+
+    public function trabajos()
+    {
+        return $this->hasMany(Trabajo::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
