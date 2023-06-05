@@ -68,10 +68,6 @@
 
 Una vez que el servidor de desarrollo esté funcionando, puedes acceder a la aplicación en http://localhost:8000.
 
--   Credenciales para acceder:
-    -   email: test@gmail.com
-    -   contraseña: test123
-
 ### License
 
 Este proyecto está bajo la licencia MIT.
