@@ -49,22 +49,22 @@ const submit = () => {
         >
             {{ status }}
         </div>
-        <div class="flex justify-between gap-3">
-            <a href="/auth/facebook">
-            <Button
-                label="Continue with facebook"
-                icon="pi pi-facebook"
-                icon-class="text-blue-500"
-                outlined
-            />
+        <div class="flex justify-between gap-3 flex-col md:flex-row">
+            <a href="/auth/facebook" class="w-full">
+                <Button
+                    label="Continue with facebook"
+                    icon="pi pi-facebook"
+                    icon-class="text-blue-500"
+                    outlined
+                />
              </a>
-            <a href="/login-google">
-            <Button
-                label="Continue with google"
-                icon="pi pi-google"
-                icon-class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 "
-                outlined
-            />
+            <a href="/login-google" class="w-full">
+                <Button
+                    label="Continue with google"
+                    icon="pi pi-google"
+                    icon-class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 "
+                    outlined
+                />
              </a>
 
         </div>
