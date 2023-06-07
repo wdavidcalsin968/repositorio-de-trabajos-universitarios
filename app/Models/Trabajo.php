@@ -17,6 +17,7 @@ class Trabajo extends Model
 
     public function matriculas()
     {
-        return $this->belongsToMany(Matricula::class);
+        return $this->belongsToMany(Matricula::class, 'tareas','trabajo_id','matricula_id')
+        ->using(Tarea::class);
     }
 }

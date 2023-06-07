@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('revisions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('matricula_trabajo_id')->constrained('matricula_trabajo')->onDelete('cascade');
+            $table->foreignId('tarea_id')->constrained('tareas')->onDelete('cascade');
             $table->string('archivo');
             $table->string('turnitin');
             $table->foreignId('estado_id')->constrained('estados')->onDelete('cascade');

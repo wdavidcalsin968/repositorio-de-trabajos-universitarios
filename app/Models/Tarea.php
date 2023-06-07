@@ -4,14 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Estado extends Model
+
+class Tarea extends Pivot
 {
     use HasFactory;
 
+    protected $table =  'tareas';
 
     public function revisions()
     {
-        return $this->hasMany(Revision::class);
+        return $this->hasMany(Revision::class, 'tarea_id','id');
     }
 }
