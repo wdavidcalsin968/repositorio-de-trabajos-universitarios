@@ -50,12 +50,14 @@ const submit = () => {
             {{ status }}
         </div>
         <div class="flex justify-between gap-3">
+            <a href="/auth/facebook">
             <Button
                 label="Continue with facebook"
                 icon="pi pi-facebook"
                 icon-class="text-blue-500"
                 outlined
             />
+             </a>
             <a href="/login-google">
             <Button
                 label="Continue with google"
