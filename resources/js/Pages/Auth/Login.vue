@@ -56,12 +56,15 @@ const submit = () => {
                 icon-class="text-blue-500"
                 outlined
             />
+            <a href="/login-google">
             <Button
                 label="Continue with google"
                 icon="pi pi-google"
                 icon-class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 "
                 outlined
             />
+             </a>
+
         </div>
 
         <div

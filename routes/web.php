@@ -1,9 +1,11 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,4 +53,27 @@ Route::middleware([
         // return Inertia::render('Dashboard');
         return Inertia::render('Dashboard', ['user' => Auth::user()]);
     })->name('dashboard');
+});
+
+Route::get('/login-google', function () {
+    return Socialite::driver('google')->redirect();
+});
+ 
+Route::get('/google-callback', function () {
+    $user = Socialite::driver('google')->user();
+    $userExists = User::where('external_id', $user->id)->where('external_auth', 'google')->first();
+    if($userExists){
+        Auth::login($userExists);
+    }else {
+        $userNew = User::create([
+            'name' => $user->name,
+            'email' => $user->email,
+            'avatar' => $user->avatar,
+            'external_id' => $user->id,
+            'external_auth' => 'google',            
+        ]);
+        Auth::login($userNew);
+    }
+    // $user->token
+    return redirect('/dashboard');
 });
