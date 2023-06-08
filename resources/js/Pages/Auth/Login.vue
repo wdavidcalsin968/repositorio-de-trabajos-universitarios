@@ -40,7 +40,7 @@ const submit = () => {
         </template>
 
         <div class="w-full">
-            <h2 class="text-3xl font-serif">PROYECTOS DE SOFTWARE II</h2>
+            <h2 class="text-3xl font-serif text-center">PROYECTOS DE SOFTWARE II</h2>
         </div>
 
         <div
@@ -49,28 +49,30 @@ const submit = () => {
         >
             {{ status }}
         </div>
-        <div class="flex justify-between gap-3 flex-col md:flex-row">
-            <a href="/auth/facebook" class="w-full">
+        <div class="flex justify-between gap-3 flex-col md:flex-row ">
+            <a href="/auth/facebook" class="flex-1 ">
                 <Button
-                    label="Continue with facebook"
+                    label="Facebook"
                     icon="pi pi-facebook"
                     icon-class="text-blue-500"
-                    outlined
+                    outlined    
+                    class="w-full"                
                 />
              </a>
-            <a href="/login-google" class="w-full">
+            <a href="/login-google" class="flex-1 ">
                 <Button
-                    label="Continue with google"
+                    label="Google"
                     icon="pi pi-google"
                     icon-class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 "
                     outlined
+                    class="w-full"
                 />
              </a>
 
         </div>
 
         <div
-            class="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300"
+            class="my-1 md:my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300"
         >
             <p
                 class="mx-4 mb-0 text-center font-semibold dark:text-neutral-900"
