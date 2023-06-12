@@ -42,6 +42,7 @@ class User extends Authenticatable
         'avatar', 
         'external_id', 
         'external_auth',
+        'fb_id',
     ];
 
     /**

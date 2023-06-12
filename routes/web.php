@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,3 +78,6 @@ Route::get('/google-callback', function () {
     // $user->token
     return redirect('/dashboard');
 });
+
+Route::get('auth/facebook', [SocialController::class, 'redirectFacebook']);
+Route::get('auth/facebook/callback', [SocialController::class, 'callbackFacebook']); 
