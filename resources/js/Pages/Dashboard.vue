@@ -168,7 +168,7 @@ defineProps({ user: Array });
 
             <div
                 class="bg-white min-h-screen overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-col gap-7"
-            >
+                >
                 <!-- <Welcome /> -->
                 <h2 class="uppercase text-3xl text-center font-bold">
                     Bienvenidos al sistema

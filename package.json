@@ -20,11 +20,8 @@
     },
     "dependencies": {
         "chart.js": "^4.3.0",
-<<<<<<< HEAD
         "laravel-permission-to-vuejs": "^3.0.1",
-=======
         "primeflex": "^3.3.1",
->>>>>>> 3709649ba055e566eecfe32345c6fa0ff605c6ee
         "primeicons": "^6.0.1",
         "primevue": "^3.29.0"
     }
