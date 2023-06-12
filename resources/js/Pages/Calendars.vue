@@ -15,14 +15,12 @@ import Column from "primevue/column";
         </template>
 
         <div>
-            <HeaderCard title="calendarios" />
-            <div
-                class="bg-white min-h-full overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-col border gap-8"
-            >
+            <HeaderCard title="calendarios"/>
+            <div    class="bg-white min-h-full overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-col border gap-8">
                 <h2
                     class="py-2 uppercase text-3xl text-center font-bold text-gray-800"
                 >
-                    Ingresar Calendario
+                    Ingresar Calendarios
                 </h2>
 
                 <div class="card flex gap-4 flex-wrap">

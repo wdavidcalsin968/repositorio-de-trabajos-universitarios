@@ -10,6 +10,12 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 
+//llamada para usar
+use Spatie\Permission\Traits\HasRoles;
+
+//llamada para usar
+use LaravelAndVueJS\Traits\LaravelPermissionToVueJS;
+
 class User extends Authenticatable
 {
     use HasApiTokens;
@@ -17,6 +23,12 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+
+    //backend
+    use HasRoles;
+
+    //frontend 
+    use LaravelPermissionToVueJS;
 
     /**
      * The attributes that are mass assignable.

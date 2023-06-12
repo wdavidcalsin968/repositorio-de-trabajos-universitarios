@@ -12,6 +12,7 @@ import "primevue/resources/primevue.min.css";
 import 'primeicons/primeicons.css';
 
 import PrimeVue from 'primevue/config';
+import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs'
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 
@@ -25,7 +26,9 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue, Ziggy)
             .use(PrimeVue)
-            .mount(el);
+            //roles y permisos para la interfaz
+            .use(LaravelPermissionToVueJS)
+            .mount(el);   
     },
     progress: {
         color: '#4B5563',

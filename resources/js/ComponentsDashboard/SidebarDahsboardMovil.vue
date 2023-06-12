@@ -113,7 +113,7 @@ import PanelMenu from "primevue/panelmenu";
                         <div class="group">
                             <span
                                 class="text-gray-300 text-sm font-bold hover:text-white group-hover:text-white"
-                                >Calendars</span
+                                >Calendarios</span
                             >
                         </div>
                     </Link>
@@ -137,7 +137,7 @@ import PanelMenu from "primevue/panelmenu";
                         </svg>
                         <div class="group">
                             <span
-                                class="text-gray-300 text-sm font-bold hover:text-white group-hover:text-white"
+                                class="text-gray-300 text-sm font-bold hover:text-white group-hover:text-white" 
                                 >Registrar Usuario</span
                             >
                         </div>
