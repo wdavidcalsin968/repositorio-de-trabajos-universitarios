@@ -63,7 +63,20 @@
         ```
         php artisan serve
         ```
-
+        
+### Instalación de recursos para ROLES Y PERMISOS
+    - Instalación de Spatie 
+        ```
+        composer require spatie/laravel-permission
+        ```
+    - no es necesario modificar nada del codigo solo tener instalado este recurso, ya que se hicieron las modificaciones respectivas dentro del codigo
+    
+    - Instalación de LaravelVueSpatie (ejecute los siguientes comandos en su consola)
+        ```
+        composer require ahmedsaoud31/laravel-permission-to-vuejs=dev-master
+        npm i laravel-permission-to-vuejs
+        ```
+     --referencia link: https://www.npmjs.com/package/laravel-permission-to-vuejs 
 ### Usage
 
 Una vez que el servidor de desarrollo esté funcionando, puedes acceder a la aplicación en http://localhost:8000.
