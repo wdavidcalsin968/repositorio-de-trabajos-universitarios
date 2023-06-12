@@ -16,15 +16,15 @@ import Column from "primevue/column";
 
         <div>
             <HeaderCard title="calendarios"/>
-            <div    class="bg-white min-h-full overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-col border gap-8">
+            <div    class="bg-white min-h-full overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-col border gap-8" >
                 <h2
-                    class="py-2 uppercase text-3xl text-center font-bold text-gray-800"
+               class="py-2 uppercase text-3xl text-center font-bold text-gray-800"
                 >
                     Ingresar Calendarios
                 </h2>
 
                 <div class="card flex gap-4 flex-wrap">
-                    <Calendar v-model="date1" dateFormat="dd/mm/yy" />
+                    <Calendar v-model="date1" dateFormat="dd/mm/yy"  />
                     <Calendar v-model="date2" showIcon />
                     <Calendar
                         v-model="date3"

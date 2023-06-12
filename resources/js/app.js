@@ -16,6 +16,7 @@ import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs'
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 
+
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({

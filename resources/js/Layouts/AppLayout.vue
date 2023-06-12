@@ -5,6 +5,7 @@ import Banner from "@/Components/Banner.vue";
 
 import NabvarDashboard from "../ComponentsDashboard/NabvarDashboard.vue";
 import SidebarDashboard from "../ComponentsDashboard/SidebarDashboard.vue";
+
 </script>
 
 <template>
@@ -26,10 +27,13 @@ import SidebarDashboard from "../ComponentsDashboard/SidebarDashboard.vue";
     </div>
 </template>
 
-<script>
+<script type="text/javascript" >
 export default {
     props: {
         userName: String,
     },
+    
 };
+
+
 </script>
