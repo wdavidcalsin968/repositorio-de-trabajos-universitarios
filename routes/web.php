@@ -42,6 +42,22 @@ Route::get('/users', function () {
     return Inertia::render('Users');
 })->name('users');
 
+/*
+Admin-2
+*/
+Route::get('/facultad', function () {
+    return Inertia::render('Facultadd');
+});
+Route::get('/facultadview', function () {
+    return Inertia::render('Facultadview');
+});
+Route::get('/estudiante', function () {
+    return Inertia::render('Estudiante');
+});
+Route::get('/estudianteview', function () {
+    return Inertia::render('Estudianteview');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

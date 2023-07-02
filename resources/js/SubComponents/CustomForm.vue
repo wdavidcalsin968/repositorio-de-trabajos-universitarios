@@ -8,9 +8,7 @@ import Password from "primevue/password";
 </script>
 <template>
     <div>
-        <h2
-            class="pb-10 uppercase text-3xl text-center font-bold text-gray-800"
-        >
+        <h2 class="pb-10 uppercase text-3xl text-center font-bold text-gray-800">
             Ingresar Formulario
         </h2>
 
@@ -116,14 +114,14 @@ import Password from "primevue/password";
                     <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <div class="flex-auto">
                             <span class="p-float-label">
-                                <!-- <AutoComplete
+                                 <!-- <AutoComplete
                                             class="w-full"
                                             v-model="selectedItem"
                                             dropdown
                                             :suggestions="filteredItems"
                                             @complete="searchItems"
                                         /> -->
-                                <AutoComplete
+        <AutoComplete
                                     class="w-full"
                                     v-model="selectedItem"
                                     :suggestions="filteredItems"
@@ -186,7 +184,7 @@ import Password from "primevue/password";
             </div>
         </h:form>
 
-        <!-- <Button label="Check" icon="pi pi-check" /> -->
+        <Button label="Check" icon="pi pi-check" />
     </div>
 </template>
 
